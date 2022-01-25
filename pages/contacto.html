@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <!--link de css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1> Contactenos</h1>
+        <!-- Menu de navegacion-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Index.html">Home</a>
+                </li>
+                <li> 
+                    <a href="nosotros.html"> Nosotros</a>
+                </li>
+                <li>
+                    <a href="productos.html"> Productos</a>
+                </li>
+                <li>
+                    <a href="locales.html"> Nuestros locales </a>
+                </li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend> Formulario </legend>
+                <div>
+                    <label for="nombre"> Completa tu nombre</label>
+                    <input type="text" name="nombre" placeholder="complete su nombre">
+                </div>
+                <div>
+                    <label for="email"> Completa tu email</label>
+                    <input type="email" name="email" placeholder="complete su email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="pais"> Selecciona tu pais</label>
+                    <select name="pais">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>     
+                </div>
+                <br> 
+                <div>
+                    <label for="sexo">Genero </label> <br>
+                    <input type="radio" name="sexo" value="hombre"> Hombre <br>
+                    <input type="radio" name="sexo" value="mujer"> Mujer <br>
+                    <input type="radio" name="sexo" value="no binario"> No binario <br>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" value="">    
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" name="Resetear" id="">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h6>Todos los derechos reservados</h6> 
+    </footer>
+</body>
+</html>

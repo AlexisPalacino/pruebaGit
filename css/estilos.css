@@ -1,0 +1,93 @@
+
+/*reset*/
+* {
+    margin: 0;
+    padding:  0;
+}
+
+/*propiedades body*/
+
+body{
+    background-image: linear-gradient(90deg, rgba(210,27,20,1) 0%, rgba(246,251,128,1) 50%, rgba(251,148,3,1) 100%);
+}
+/*por sí alguna propiedad no funciona agregra -webkit- 
+-webkit-linear-gradient*/
+
+
+.padre{
+        display: flex;
+}
+.cajita{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: 30px;
+
+}
+
+.uno{
+    border: 3px solid green;
+    transition: 2s;
+    
+
+}
+.uno:hover{
+    background-color: red;
+    transform: scale(1.5)
+}
+
+/* hover es una pseudo clase que permite dar estilos cuando el urualrio pase el mause por encima*/
+.dos{
+    border: 3px solid rebeccapurple;
+}
+
+/* propierdades de animación*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+img{
+    width: 40%;
+}
+
+.agrandar{
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+
+@keyframes agrandar{
+    from{
+        transform: scale(1.0);
+
+    }
+    to{
+        transform:scale(1.1);
+    }
+}
+
+/*animación diamante*/
+.aparecer{
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 1;
+
+    }
+    to{
+        opacity:0;
+    }
+}
